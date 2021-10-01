@@ -15,7 +15,7 @@
   <!-- header -->
   <?php include_once './components/header.php'; ?>
 
-  <div id="templateVue" class="container py-4">
+  <div id="templateVue" class="container">
 
     <div v-if="message" :class="classAlert" role="alert">
       {{ message }}
@@ -23,7 +23,7 @@
     </div>
 
     <div class="row">
-      <div class="col-md-5">
+      <div class="col-md-5 py-4">
 
         <div class="card bg-dark text-white rounded-3">
           <div class="card-body">
@@ -43,7 +43,7 @@
         </div>
         <!-- end card -->
       </div>
-      <div class="col-md-7">
+      <div class="col-md-7 py-4">
         <input type="text" v-model="searchInput" class='form-control bg-dark text-white' placeholder="search...">
 
         <table class="table text-center table-dark text-white table-striped">

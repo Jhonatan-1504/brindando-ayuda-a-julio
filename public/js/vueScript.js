@@ -71,7 +71,7 @@ const app = new Vue({
   },
   computed: {
     classAlert() {
-      return `alert alert-${this.class} alert-dismissible fade show`;
+      return `alert alert-${this.class} alert-dismissible fade show py-4`;
     },
     idClass() {
       if (!this.id) return "btn btn-primary";
